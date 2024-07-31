@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up sign out</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+
+    <div class="v-bg">
+      <video autoplay muted loop id="bg-video">
+        <source src="./assets/190828_27_SuperTrees_HD_17.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    </div>
+
+
+
+
+    <div class="main">
+      <div id="auth_container">
+        <div>
+          <h1 class="headings">Create Account</h1>
+          <br>
+
+          <input type="email" id="signup_email" placeholder="Email" />
+          <br>
+          <input type="password" id="signup_password" placeholder="Password" />
+          <br>
+          <button id="signup_btn">Create Account</button>
+        </div>
+        <br>
+        <div>
+          <h1 class="headings">Sign in</h1>
+          <br>
+
+          <input type="email" id="signin_email" placeholder="Email" />
+          <br>
+
+          <input type="password" id="signin_password" placeholder="Password" />
+          <br>
+          <button id="signin_btn">Log in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="user_container">
+      <h1 id="user_email"></h1>
+      <br>
+      <button id="logout_btn">Logout</button>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
